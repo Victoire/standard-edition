@@ -4,9 +4,9 @@
 parameters:
     database_host:     127.0.0.1
     database_port:     ~
-    database_name:     symfony
-    database_user:     root
-    database_password: ~
+    database_name:     victoire
+    database_user: root
+    database_password: root
     # You should uncomment this if you want use pdo_sqlite
     # database_path: "%kernel.root_dir%/data.db3"
 
@@ -17,3 +17,13 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
+    victoire_redis_path: redis://127.0.0.1:6379
+    session_redis_path: redis://127.0.0.1:6379/2
+    node_path: /usr/local/bin/node
+    node_paths:
+        - /usr/local/lib/node_modules
+        - /usr/local/share/npm/lib/node_modules
+    assetic.sass.bin: /usr/local/bin/sass
+
+    locale_pattern_table:
+        standard-edition.victoire.dev: fr

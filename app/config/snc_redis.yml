@@ -1,0 +1,14 @@
+snc_redis:
+    clients:
+        session:
+            type: predis
+            alias: session
+            dsn: %session_redis_path%
+            logging: false
+        victoire:
+            type: predis
+            alias: victoire
+            dsn: %victoire_redis_path%
+            logging: false
+    session:
+        client: session

@@ -10,3 +10,5 @@
 /var/cache/*
 /var/logs/*
 /web/bundles/
+/web/*css
+/web/*js

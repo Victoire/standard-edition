@@ -12,20 +12,34 @@
         ]
     },
     "require": {
-        "php": ">=5.3.9",
+        "php": ">=5.5.9",
         "symfony/symfony": "2.8.*",
-        "doctrine/orm": "^2.4.8",
+        "doctrine/orm": "v2.5.2",
         "doctrine/doctrine-bundle": "~1.4",
         "symfony/swiftmailer-bundle": "~2.3",
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~5.0",
         "sensio/framework-extra-bundle": "^3.0.2",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "victoire/victoire": "~1.7",
+        "friendsofsymfony/jsrouting-bundle": "2.0.*@dev",
+        "sensio/generator-bundle": "~2.3",
+        "infinite-networks/form-bundle": "dev-master",
+        "doctrine/data-fixtures": "~1.1@dev",
+        "doctrine/doctrine-fixtures-bundle": "2.2.x-dev",
+        "predis/predis": "^1.1@dev",
+        "friendsofsymfony/user-bundle": "~2.0@dev",
+        "snc/redis-bundle": "2.x-dev"
     },
     "require-dev": {
-        "sensio/generator-bundle": "~3.0",
         "symfony/phpunit-bridge": "~2.7"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Charlie-Lucas/InfiniteFormBundle"
+        }
+    ],
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -47,7 +61,7 @@
     "config": {
         "bin-dir": "bin",
         "platform": {
-            "php": "5.3.9"
+            "php": "7.0.4"
         }
     },
     "extra": {

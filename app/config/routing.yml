@@ -1,3 +1,24 @@
+_bazinga_jstranslation:
+    resource: "@BazingaJsTranslationBundle/Resources/config/routing/routing.yml"
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+_liip_imagine:
+    resource: "@LiipImagineBundle/Resources/config/routing.xml"
+
+AvAlertifyBundle:
+    resource: "@AvAlertifyBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+VictoireCoreBundle:
+    resource: .
+    type: victoire_i18n

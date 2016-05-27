@@ -1,0 +1,15 @@
+imports:
+    - { resource: @VictoireCoreBundle/Resources/config/config.yml }
+
+victoire_core:
+    user_class: "Victoire\\Bundle\\UserBundle\\Entity\\User"
+    business_entity_debug: true
+    layouts:
+        fullWidth: "Contenu unique"
+
+victoire_i18n:
+    available_locales:
+        - fr
+        - en
+    locale_pattern: parameter
+    locale_pattern_table: %locale_pattern_table%

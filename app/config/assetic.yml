@@ -1,0 +1,11 @@
+# Assetic Configuration
+assetic:
+    use_controller: false
+    node: %node_path%
+    node_paths: %node_paths%
+    bundles: ~
+    filters:
+        cssrewrite: ~
+        less: ~
+        scss:
+            sass: %assetic.sass.bin%
