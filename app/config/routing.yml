@@ -15,9 +15,10 @@ AvAlertifyBundle:
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
 
-app:
-    resource: "@AppBundle/Controller/"
+front_app:
+    resource: "@AppBundle/Controller/Front"
     type:     annotation
+    prefix:   /front
 
 VictoireCoreBundle:
     resource: .

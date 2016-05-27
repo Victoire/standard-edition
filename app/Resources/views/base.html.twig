@@ -1,13 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
-</html>
+{% extends 'VictoireCoreBundle:Layout:base.html.twig' %}
+
+{% block meta %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+{% endblock meta %}
+
+{% block head_icons %}
+    <!-- Icons -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+{% endblock %}
+
+{% block head_script %}
+    <script type="text/javascript" src="{{ asset('bundles/app/bower_components/hinclude/hinclude.js') }}"></script>
+{% endblock %}
+
+{% block javascript %}
+    {% block alertify %}
+        {{ app.session|alertify|raw }}
+    {% endblock %}
+{% endblock javascript %}
