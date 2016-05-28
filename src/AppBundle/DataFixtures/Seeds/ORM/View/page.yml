@@ -1,0 +1,42 @@
+Victoire\Bundle\I18nBundle\Entity\ViewTranslation:
+    home_en:
+        name: Homepage
+        slug: home
+        locale: en
+
+    test_en:
+        name: English test
+        slug: english-test
+        locale: en
+
+Victoire\Bundle\PageBundle\Entity\Page:
+    home:
+        currentLocale: fr
+        template: @template_base
+        author: @anakin
+        name: Page d'accueil
+        slug: home
+        homepage: true
+        undeletable: true
+        status: published
+        publishedAt: <dateTime('now')>
+        createdAt: <dateTime('now')>
+        updatedAt: <dateTime('now')>
+        cssUpToDate: false
+        translations: [@home_en]
+
+    test:
+        currentLocale: fr
+        template: @template_base
+        author: @anakin
+        name: Test
+        parent: @home
+        slug: test
+        homepage: false
+        undeletable: false
+        status: published
+        publishedAt: <dateTime('now')>
+        createdAt: <dateTime('now')>
+        updatedAt: <dateTime('now')>
+        cssUpToDate: false
+        translations: [@test_en]

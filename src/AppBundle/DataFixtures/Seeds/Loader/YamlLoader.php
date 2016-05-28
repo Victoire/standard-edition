@@ -1,0 +1,44 @@
+<?php
+
+namespace AppBundle\DataFixtures\Loader;
+
+use Nelmio\Alice\Fixtures\Loader;
+use Symfony\Component\Yaml\Yaml as YamlParser;
+
+/**
+ * This YamlLoader just changes User class before importing DataFixtures
+ * because Victoire allows you to set your own USer class and auto inject the metadata
+ * making the relation dynamic. We have to change Default Victoire User class into the project one.
+ */
+class YamlLoader extends Loader
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function load($file)
+    {
+        ob_start();
+        $loader = $this;
+        $includeWrapper = function () use ($file, $loader) {
+        return include $file;
+    };
+        $data = $includeWrapper();
+        if (true !== $data) {
+            $yaml = ob_get_clean();
+            $data = YamlParser::parse($yaml);
+        }
+
+        if (!is_array($data)) {
+            throw new \UnexpectedValueException('Yaml files must parse to an array of data');
+        }
+
+        foreach ($data as $key => $value) {
+            if ($key == "Victoire\Bundle\UserBundle\Entity\User") {
+                $data[$this->userClass] = $value;
+            }
+            unset($data[$key]);
+        }
+
+        return parent::load($data);
+    }
+}

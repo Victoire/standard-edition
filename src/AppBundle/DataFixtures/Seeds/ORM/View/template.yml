@@ -1,0 +1,18 @@
+Victoire\Bundle\I18nBundle\Entity\ViewTranslation:
+    template_base_trans:
+        name: Base
+        slug: base
+        locale: en
+
+Victoire\Bundle\TemplateBundle\Entity\Template:
+    template_base:
+        currentLocale: fr
+        name: Base
+        slug: base
+        layout: defaultLayout
+        author: @anakin
+        undeletable: true
+        createdAt: <dateTime('now')>
+        updatedAt: <dateTime('now')>
+        cssUpToDate: false
+        translations: [@template_base_trans]
