@@ -4,6 +4,7 @@ imports:
     - { resource: assetic.yml }
     - { resource: fos_user.yml }
     - { resource: snc_redis.yml }
+    - { resource: stof_doctrine_extensions.yml }
     - { resource: victoire_core.yml }
     - { resource: services.yml }
 
