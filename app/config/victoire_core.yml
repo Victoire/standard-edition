@@ -5,7 +5,7 @@ victoire_core:
     user_class: "Victoire\\Bundle\\UserBundle\\Entity\\User"
     business_entity_debug: true
     layouts:
-        fullWidth: "Contenu unique"
+        defaultLayout: "Contenu unique"
 
 victoire_i18n:
     available_locales:
