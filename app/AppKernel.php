@@ -33,6 +33,7 @@ class AppKernel extends Kernel
             new Knp\DoctrineBehaviors\Bundle\DoctrineBehaviorsBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
             new A2lix\TranslationFormBundle\A2lixTranslationFormBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
 
             //Victoire bundles
             new Victoire\Bundle\AnalyticsBundle\VictoireAnalyticsBundle(),
