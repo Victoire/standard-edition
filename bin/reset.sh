@@ -57,6 +57,7 @@ if [ "$2" == "--only-db" -o "$2" == "" ]; then
     php bin/console doctrine:schema:create --env=$env
 fi
 
+${talkInColor}; echo ">>>>>>> php bin/console doctrine:fixtures:load"; ${resetColor};
 if [ "$2" == "--only-fixtures" -o "$2" == "--only-db" -o "$2" == "" ]; then
     if [ "$3" == "--only-seeds" ]; then
         php bin/console doctrine:fixtures:load --fixtures="src/AppBundle/DataFixtures/Seeds" --no-interaction
