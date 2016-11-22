@@ -7,8 +7,8 @@ fos_user:
 _liip_imagine:
     resource: "@LiipImagineBundle/Resources/config/routing.xml"
 
-AvAlertifyBundle:
-    resource: "@AvAlertifyBundle/Controller/"
+AlertifyBundle:
+    resource: "@TroopersAlertifyBundle/Controller/"
     type:     annotation
     prefix:   /
 

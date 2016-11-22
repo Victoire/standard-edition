@@ -18,8 +18,8 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
 
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
-            new AppVentus\AlertifyBundle\AvAlertifyBundle(),
-            new AppVentus\AsseticInjectorBundle\AvAsseticInjectorBundle(),
+            new Troopers\AlertifyBundle\TroopersAlertifyBundle(),
+            new Troopers\AsseticInjectorBundle\TroopersAsseticInjectorBundle(),
             new Bazinga\Bundle\JsTranslationBundle\BazingaJsTranslationBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
