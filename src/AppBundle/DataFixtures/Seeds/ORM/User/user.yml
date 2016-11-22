@@ -8,7 +8,6 @@ Victoire\Bundle\UserBundle\Entity\User:
         enabled: true
         locale: fr
         locked: false
-        expired: false
         createdAt: <dateTime('now')>
         updatedAt: <dateTime('now')>
         roles:
