@@ -20,3 +20,6 @@ Go to `http://standard-edition.victoire.dev/app_dev.php/login` to log in.
 
 - email: `anakin@victoire.io`
 - password: `pass`
+
+You will see *Text Widget*. Click on a button on the lower menu in order to add a widget, modify this existing
+widget or modify its style.
