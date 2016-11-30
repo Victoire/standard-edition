@@ -1,0 +1,5 @@
+Victoire\Bundle\WidgetMapBundle\Entity\WidgetMap:
+    widgetMap:
+        action: create
+        view: @home
+        slot: main_content

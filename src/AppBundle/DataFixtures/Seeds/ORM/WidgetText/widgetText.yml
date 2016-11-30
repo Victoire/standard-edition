@@ -1,0 +1,7 @@
+Victoire\Widget\TextBundle\Entity\WidgetText:
+    widgetText:
+        content: "Text Widget"
+        widgetMap: @widgetMap
+        container_tag: div
+        createdAt: <dateTime('now')>
+        updatedAt: <dateTime('now')>
